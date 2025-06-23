@@ -1,51 +1,87 @@
-Program4: Weather Information Visualization Using ES6 Features
+# Weather Information Visualization Using ES6 Features
 
+**Developed by Saiteja**
 
+## Table of Contents
 
+1. [Aim](#aim)
+2. [Technologies Used](#technologies-used)
+3. [Features](#features)
+4. [Installation & Setup](#installation--setup)
+5. [Usage](#usage)
+6. [API Configuration](#api-configuration)
+7. [File Structure](#file-structure)
+8. [License](#license)
 
-Aim
+## Aim
 
-To explore and implement ES6 features such as arrow functions, callbacks, promises, and async/await by developing a weather application that fetches real-time weather data from the OpenWeatherMap API. The application includes user input validation and displays weather information graphically using Chart.js.
+To explore and implement modern ES6 features—arrow functions, callbacks, Promises, and async/await—by building a weather application that fetches real-time data from the OpenWeatherMap API and visualizes it using Chart.js.
 
-Technologies Used
-•HTML for structuring the application
-•CSS for styling and layout
-•JavaScript (ES6+) for functionality
-•Chart.js for data visualization
-•OpenWeatherMap API for real-time weather data
-Features
-•Fetch real-time weather data using OpenWeatherMap API
-•Input validation to ensure a valid city name
-•Dynamic UI updates using JavaScript DOM manipulation
-•Graphical representation of weather data using Chart.js
-•Error handling for better user experience
+## Technologies Used
 
-Installation & Setup
-1.Clone the repository:
-2.git clone https://github.com/your-repo/weather-visualization.git
-3.Navigate to the project directory:
-4.cd weather-visualization
-5.Open index.html in a web browser.
+* **HTML5** for page structure
+* **CSS3** for styling and layout
+* **JavaScript (ES6+)** for application logic
+* **Chart.js** for graphical data visualization
+* **OpenWeatherMap API** for real-time weather data
 
-Usage
-1.Enter a valid city name in the input field.
-2.Click the "Fetch Weather" button.
-3.The application fetches and displays temperature, humidity, and weather description.
-4.A bar chart visually represents temperature and humidity.
+## Features
 
-API Configuration
-1.Get an API key from OpenWeatherMap.
-2.Replace YOUR_API_KEY in script.js with your actual API key:
-3.const apiKey = 'YOUR_API_KEY';
+* Fetches current weather data from OpenWeatherMap
+* Validates user input to ensure a non-empty city name
+* Utilizes Promises and async/await for API calls
+* Dynamically updates the UI with weather details:
 
-Dependencies
-•Chart.js (CDN or local installation)
-•OpenWeatherMap API key
+  * Temperature
+  * Humidity
+  * Weather description
+* Visualizes temperature and humidity in a bar chart using Chart.js
+* Handles errors gracefully with user-friendly messages
 
-License
-This project is licensed under the MIT License.
+## Installation & Setup
 
-Author
-•tarunteja
-•GitHub: Your GitHub Profile
-Feel free to contribute or suggest improvements!
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/your-repo/weather-visualization.git
+   ```
+2. **Navigate to the project directory**
+
+   ```bash
+   cd weather-visualization
+   ```
+3. **Open the application**
+
+   * Launch `index.html` in your web browser.
+
+## Usage
+
+1. Enter a valid city name into the input field.
+2. Click the **Fetch Weather** button.
+3. View the current temperature, humidity, and weather description.
+4. Inspect the bar chart for a visual comparison of temperature and humidity.
+
+## API Configuration
+
+1. Register at [OpenWeatherMap](https://openweathermap.org/) and obtain an API key.
+2. In `script.js`, replace the placeholder with your actual API key:
+
+   ```javascript
+   const apiKey = 'YOUR_API_KEY';
+   ```
+
+## File Structure
+
+```plaintext
+weather-visualization/
+├── css/
+│   └── styles.css         # Custom styles for layout and charts
+├── js/
+│   └── script.js          # Fetch logic and ES6 feature implementations
+├── index.html             # Main application page
+└── README.md              # Project documentation
+```
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
