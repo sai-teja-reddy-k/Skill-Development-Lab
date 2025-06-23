@@ -1,41 +1,85 @@
- Program 3: Client-Side Validation Using JavaScript
+# Client-Side Validation with JavaScript
 
+**Developed by Saiteja**
 
-1. Aim
-To implement client-side validation using JavaScript for a registration form and a shopping cart page.
+## Table of Contents
 
-2. Requirements
-•Software: Google Chrome, VS Code / Any Text Editor
-•Technologies: HTML, CSS, JavaScript
+1. [Aim](#aim)
+2. [Requirements](#requirements)
+3. [Theory](#theory)
+4. [Features](#features)
 
-3. Theory
-SDC observation
-Client-side validation ensures that form inputs meet the required format before being sent to the server. JavaScript functions are used to check user input dynamically, preventing invalid data from being submitted and improving the user experience.
+   * [Registration Form Validation](#registration-form-validation)
+   * [Shopping Cart Validation](#shopping-cart-validation)
+5. [Usage](#usage)
+6. [Implementation](#implementation)
+7. [File Structure](#file-structure)
+8. [License](#license)
 
-4. Features
+## Aim
 
-4.1 Registration Form Validation
-•Validates user input fields (name, email, and password).
-•Ensures all fields are filled.
-•Uses a regular expression to validate email format.
-•Checks that the password is at least 6 characters long.
-•Displays an alert for invalid input.
+To implement robust client-side validation using JavaScript for both the user registration form and the shopping cart page, ensuring data integrity and an improved user experience.
 
-4.2 Shopping Cart Validation
-•Retrieves cart items from localStorage.
-•Validates quantity (must be a positive number).
-•Displays an alert for incorrect input.
-•Dynamically updates the total price.
+## Requirements
 
-5. Usage
-1.Open the registration form and enter details.
-2.Click the submit button to trigger validation.
-3.Navigate to the shopping cart and check the quantities.
-4.Adjust item quantities, ensuring all inputs are valid.
-5.The total price updates dynamically.
+* **Software:** Google Chrome, VS Code (or any text editor)
+* **Technologies:** HTML5, CSS3, JavaScript
 
-6. Implementation
-The validation logic is implemented using JavaScript. The registration form ensures valid inputs before submission, while the shopping cart checks item quantities and updates the total price accordingly.
+## Theory
 
-7. License
-This project is open-source and free to use.
+Client-side validation uses JavaScript to check user inputs before sending data to the server. By validating fields dynamically, invalid submissions are prevented, reducing server load and giving immediate feedback to users.
+
+## Features
+
+### Registration Form Validation
+
+* Ensures all fields (name, email, password) are completed.
+* Validates email format using a regular expression.
+* Enforces a minimum password length of 6 characters.
+* Displays alerts for any invalid input.
+
+### Shopping Cart Validation
+
+* Retrieves cart items stored in `localStorage`.
+* Verifies that quantity values are positive numbers.
+* Alerts users when invalid quantities are entered.
+* Dynamically recalculates and updates the total price on valid changes.
+
+## Usage
+
+1. **Registration:**
+
+   * Open the registration form.
+   * Fill in the required details and click **Submit**.
+   * JavaScript validation will run and block submission if errors are detected.
+2. **Shopping Cart:**
+
+   * Open the shopping cart page.
+   * Review and adjust item quantities.
+   * Invalid inputs will trigger alerts, and the total will update in real time.
+
+## Implementation
+
+All validation logic is written in plain JavaScript:
+
+* **Registration script** handles form submission events and applies regex/email checks and length validations.
+* **Cart script** reads from `localStorage`, loops through items, validates quantity inputs, and updates the displayed total.
+
+## File Structure
+
+```plaintext
+ShoppingCartApp/
+└── public/
+    ├── html/
+    │   ├── register.html     # Registration form page
+    │   └── cart.html         # Shopping cart page
+    ├── js/
+    │   └── validation.js     # JavaScript validation logic
+    └── css/
+        └── validation.css   # Styles for validation messages
+```
+
+## License
+
+This project is open-source and released under the [MIT License](LICENSE).
+Sai Teja Reddy
