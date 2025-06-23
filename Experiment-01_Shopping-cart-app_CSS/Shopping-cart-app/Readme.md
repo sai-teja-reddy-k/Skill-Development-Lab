@@ -90,3 +90,10 @@ ShoppingCartApp/
 This project is released under the [MIT License](LICENSE).
 
 Sai teja Reddy K
+![image](https://github.com/user-attachments/assets/af3b71dc-c550-48b9-a39f-6dc920904ddb)
+![image](https://github.com/user-attachments/assets/2f2becf2-d312-438f-bc4b-a80e55b3d405)
+![image](https://github.com/user-attachments/assets/b8160b3a-8e0b-4487-b9de-e39f718fe2bb)
+![image](https://github.com/user-attachments/assets/b66c9829-f6e6-4643-8c34-25f3b1cc2f83)
+
+
+
