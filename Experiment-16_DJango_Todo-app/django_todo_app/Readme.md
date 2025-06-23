@@ -1,84 +1,101 @@
-Program 16 – Django TODO App
+Django CRUD App – SDC Lab Experiment 16
+A clean and functional CRUD-based web application built using Django, developed as part of the Skill Development Course (SDC) Lab – Experiment 16.
 
-AIM  
-To develop a TODO list application backend using Django, allowing users to add, view, and manage tasks with a clean and functional web interface.
+🌟 Features
+🧾 Create, Read, Update, and Delete (CRUD) records
 
-DESCRIPTION  
-This experiment demonstrates how to build a server-rendered TODO application using Django. The app allows users to manage tasks—such as adding new tasks and viewing task lists—using Django's powerful Model-View-Template (MVT) architecture. It showcases key Django concepts like models, views, templates, forms, and URL routing. This project is ideal for beginners to learn about Django's ORM, template rendering, and basic backend development.
+🎨 Modern interface using Django templates
 
-PROJECT STRUCTURE  
+🔐 Built-in CSRF protection on all forms
 
-django_todo_app/
-│
-├── todo_project/ # Project settings folder
-│ ├── init.py
-│ ├── settings.py # Project configuration
-│ ├── urls.py # Root URL configuration
-│ └── wsgi.py # WSGI entry point
-│
-├── todo/ # Main app folder
-│ ├── migrations/
-│ ├── templates/
-│ │ └── todo/
-│ │ └── index.html # HTML template for the app
-│ ├── init.py
-│ ├── admin.py # Admin interface
-│ ├── apps.py
-│ ├── models.py # Task model
-│ ├── views.py # Logic for handling requests
-│ └── urls.py # URL routing for app
-│
-├── db.sqlite3 # SQLite database
-├── manage.py # Django management script
-└── README.md # Project documentation
+🗃️ Data managed with SQLite
 
- 
- 
-INSTALLATION & SETUP PREREQUISITES  
-•	Python 3.8+  
-•	pip (Python package installer)  
-•	VS Code or any code editor  
-•	Basic knowledge of Django  
+💡 Modular, scalable code design
 
-STEPS TO RUN THE PROJECT  
-1.Create Project and App
-django-admin startproject todo_project  
-cd todo_project  
-python manage.py startapp todo  
+📸 Screenshots
+📋 Home Page / List View
 
-2.Define Model in todo/models.py
-from django.db import models
+➕ Create / Add Record
 
-class Task(models.Model):
-    title = models.CharField(max_length=200)
-    completed = models.BooleanField(default=False)
+📝 Edit / Update Record
 
-    def __str__(self):
-        return self.title
+❌ Delete Record
 
-3.Create and Apply Migrations
-python manage.py makemigrations  
+💡 Save your screenshots in the screenshots/ folder.
+
+🚀 Setup Instructions
+Clone the repository
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/django-sdc-crud.git
+cd django-sdc-crud
+Create a virtual environment
+
+bash
+Copy
+Edit
+python -m venv venv
+venv\Scripts\activate  # For Windows
+Install dependencies
+
+bash
+Copy
+Edit
+pip install django
+Run migrations
+
+bash
+Copy
+Edit
+python manage.py makemigrations
 python manage.py migrate
+Start development server
 
-4.Set Up Views, Templates, and URLs
-In views.py, write logic to render tasks.
-Create templates/todo/index.html.
-
-Map URLs in todo/urls.py and include in todo_project/urls.py.
-
-5.Run the Project
+bash
+Copy
+Edit
 python manage.py runserver
+Open in browser
 
-6.Visit in Browser
-Open your browser and go to:
+text
+Copy
+Edit
 http://127.0.0.1:8000/
+🗂️ Project Structure
+pgsql
+Copy
+Edit
+django_sdc_crud/
+├── main_app/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── views.py
+│   ├── urls.py
+│   └── templates/
+│       └── main_app/
+│           ├── index.html
+│           ├── create.html
+│           ├── update.html
+├── static/
+│   └── css/
+│       └── style.css
+├── db.sqlite3
+├── manage.py
+├── requirements.txt
+🧠 Concepts Used
+Django Views & Models
 
+Django Forms
 
-LICENSE
-This project is licensed under the MIT License.
+Template Inheritance
 
-Contributing
-Feel free to fork this repository and suggest improvements via pull requests. All contributions are welcome!
+SQLite Integration
 
-Author
-•tarunteja
+Static and Media Files Management
+
+Created with  by Sai Teja Reddy
+GitHub
