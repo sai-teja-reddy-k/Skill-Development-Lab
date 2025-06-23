@@ -80,6 +80,9 @@ ShoppingCartApp/
 ```
 
 ## License
+Sai Teja
+![image](https://github.com/user-attachments/assets/bc5cb9bb-cde9-4bd1-878d-66da0de00f3c)
+
 
 This project is open-source and released under the [MIT License](LICENSE).
 Sai Teja Reddy
