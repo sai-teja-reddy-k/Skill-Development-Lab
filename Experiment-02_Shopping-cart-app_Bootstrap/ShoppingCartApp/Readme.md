@@ -88,3 +88,6 @@ Custom styles are loaded through `paybycreditcard.css` to complement Bootstrapâ€
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+Sai Teja Reddy K
+![image](https://github.com/user-attachments/assets/a4cacfd1-eac3-4aec-8f90-c6484827dc14)
+
