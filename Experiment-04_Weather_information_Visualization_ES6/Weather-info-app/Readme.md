@@ -85,3 +85,5 @@ weather-visualization/
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+![image](https://github.com/user-attachments/assets/ae0a6b83-562a-4fc5-8a94-5b97a07509c4)
+
